@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Marketplace</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background-color:#f4f4f4}.container{max-width:1200px;margin:0 auto;padding:0 20px}header{background-color:#333;color:#fff}nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}nav h1{font-size:24px}nav ul{list-style:none}nav ul li{display:inline;margin-right:20px}nav ul li:last-child{margin-right:0}nav a{text-decoration:none;color:#fff;font-weight:bold}.hero{position:relative;background-size:cover;background-position:center;text-align:center;padding:100px 0}.hero h2{font-size:36px;color:#080808;margin-bottom:20px}.hero p{font-size:18px;color:#fff;margin-bottom:30px}.btn{display:inline-block;background-color:#FF5733;color:#fff;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold}.featured-projects{padding:60px 0}.project-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:20px}.project-card{background-color:#fff;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,0.1);padding:20px;margin-bottom:20px}.project-card img{width:350px;height:auto;border-radius:5px;margin-bottom:10px}.project-card h3{font-size:24px;margin-bottom:10px}.project-card p{font-size:16px;color:#777;margin-bottom:20px}.project-card .price{font-size:18px;font-weight:bold;color:#333}.project-card a{text-decoration:none;background-color:#FF5733;color:#fff;padding:10px 20px;border-radius:5px;font-weight:bold}.slider-container{position:relative;overflow:hidden;width:100%;max-height:500px}.slider{display:flex;transition:transform 1s ease-in-out}.slide{min-width:100%;max-height:500px}
+        .project-card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    }
+
+    .project-card:hover {
+        transform: scale(1.05); /* Enlarge the card on hover */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1><a href="#">Project Marketplace</a></h1>
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Freelancers</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to the Project Marketplace</h2>
+            <p>Find the perfect freelancers for your projects or offer your skills to clients.</p>
+         
+        
+        
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="featured-projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <br>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://th.bing.com/th/id/OIP.K-o5dGYvFmUAbOFMzNoibwHaE8?pid=ImgDet&rs=1" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Build responsive and dynamic websites for various clients. Utilize HTML, CSS, JavaScript, and popular web frameworks to create stunning web experiences. Collaborate with clients to bring their online visions to life.</p>
+                    <p class="price">$500</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://th.bing.com/th/id/OIP.K-o5dGYvFmUAbOFMzNoibwHaE8?pid=ImgDet&rs=1" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Create e-commerce platforms with secure payment gateways and seamless user experiences. Optimize websites for search engines (SEO) to boost online visibility and traffic.</p>
+                    <p class="price">$700</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://colorwhistle.com/wp-content/uploads/2017/11/image3.png" alt="Graphic Design">
+                    <h3>Graphic Design</h3>
+                    <p>Create visually stunning graphics for branding, marketing, and promotional materials. Design logos, brochures, flyers, and digital assets to help businesses stand out.</p>
+                    <p class="price">$300</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://colorwhistle.com/wp-content/uploads/2017/11/image3.png" alt="Graphic Design">
+                    <h3>Graphic Design</h3>
+                    <p>Illustrate digital and print materials, including infographics and social media visuals. Collaborate with clients to capture their unique brand identities.</p>
+                    <p class="price">$400</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://www.eschoolnews.com/files/2016/06/shutterstock_257030608.jpg" alt="Mobile App Development">
+                    <h3>Mobile App Development</h3>
+                    <p>Design and develop native and cross-platform mobile applications for iOS and Android. Focus on usability, performance, and security to create top-notch apps.</p>
+                    <p class="price">$800</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://www.eschoolnews.com/files/2016/06/shutterstock_257030608.jpg" alt="Mobile App Development">
+                    <h3>Mobile App Development</h3>
+                    <p>Integrate features like geolocation, push notifications, and in-app purchases to enhance app functionality. Deliver intuitive user interfaces for a seamless user experience.</p>
+                    <p class="price">$900</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Project Marketplace</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
